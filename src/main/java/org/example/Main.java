@@ -4,18 +4,18 @@ public class Main {
     public static  void main(String [] args){
         Scanner sc = new Scanner(System.in);
         double nota = 0, acumulado  = 0, cantidadNotas = 0;
-//        System.out.print("Ingrese la cantidad de notas a promediar: ");
-//        cantidadNotas = sc.nextDouble();
+       System.out.print("Ingrese la cantidad de notas a promediar: "); /*se comenta cuiando se usa el while*/
+       cantidadNotas = sc.nextDouble(); /*se comenta cuiando se usa el while*/
         System.out.println("Promedio de notas Logica programcion");
 
-        /* Ciclo
+        /* Ciclo for
         for(int i = 1; i <= cantidadNotas; i++){
             System.out.print("Ingrese la nota" + i + ": ");
             nota = sc.nextDouble();
             acumulado+=nota;
 
         }*/
-        /*Ciclo while por defecto (cuando se sabe el numero de repeticiones)
+        /*Ciclo while por defecto (cuando se sabe el numero de repeticiones)*/
 
         int i = 1;
         while (i <= cantidadNotas){
@@ -25,7 +25,7 @@ public class Main {
             i++;
         }
 
-        /*Ciclo controlado por un centinela, bandera o interruptor (cuando no se sabe la cantidad de veces a repetir)*/
+        /*Ciclo controlado por un centinela, bandera o interruptor (cuando no se sabe la cantidad de veces a repetir)
 
         int centinela = 1;
         int opcion = 0;
@@ -43,7 +43,16 @@ public class Main {
             }
         }
         System.out.print(i);
-        System.out.print("El promedioo del estudiante es: " + (acumulado/(i-1)));
+
+//        int i = 10;
+//        do{
+//            System.out.print("Ingrese la nota " + i + ": ");
+//            nota = sc.nextDouble();
+//            acumulado += nota;
+//            i++;
+//        } while (i <= 5);
+
+        System.out.print("El promedio del estudiante es: " + (acumulado/cantidadNotas));
     }
 }
 
@@ -78,4 +87,18 @@ for(int i = 1; i <= 5; i++){
         }
         System.out.print(i);
         System.out.print("El promedioo del estudiante es: " + (acumulado/i));
+
+
+
+
+        int i = 1;
+        do{
+            System.out.print("Ingrese la nota " + i + ": ");
+            nota = sc.nextDouble();
+            acumulado += nota;
+            i++;
+        } while (i <= cantidadNotas);
+
+
+        System.out.print("El promedioo del estudiante es: " + (acumulado/cantidadNotas));
 */
